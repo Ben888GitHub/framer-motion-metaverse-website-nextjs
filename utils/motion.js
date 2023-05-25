@@ -53,13 +53,13 @@ export const textVariant = (delay) => ({
 export const slideIn = (direction, type, delay, duration) => ({
 	hidden: {
 		x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
-		y: direction === 'up' ? '100%' : direction === 'down' ? '100%' : 0
-		// opacity: 0 // * opacity is optional for top landing image
+		y: direction === 'up' ? '100%' : direction === 'down' ? '100%' : 0,
+		opacity: 0 // * opacity is optional for top landing image
 	},
 	show: {
 		x: 0,
 		y: 0,
-		//	opacity: 1, // * opacity is optional for top landing image
+		opacity: 1, // * opacity is optional for top landing image
 		transition: {
 			type,
 			delay,
